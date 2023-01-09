@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+
+}
+body{
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 97.5px;
+  font-family: 'Booter-ZeroZero', cursive;
+
+
+}
+
+/* header styling */
+
+header {
+  background-color: #140f2d;
+  padding: 30px;
+  border-bottom: 3px solid orange;
+  font-family: 'Booter-ZeroZero', cursive;
+
+}
+
+.logo-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .image-logo{
+
+  width: 50px;
+  height: auto;
+  border: 1px inset ;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+header .image-logo:hover{
+
+  visibility: visible;
+  background: transparent;
+  top: 250px;
+  left:500px;
+  -webkit-transform:scale(2);
+  -moz-transform:scale(2);
+  -o-transform:scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  /* opacity:3; */
+  border:1px solid orange;
+  border-radius: 50%;
+
+}
+.logo {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+ 
+  
+}
+.it {
+  color: orange;
+}
+.header ul {
+  list-style-type: none;
+  padding: 0;
+}
+.header li {
+  display: inline;
+  color: white;
+  margin-right: 8px;
+  margin-left: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+li .home {
+  color: orange;
+  font-weight: bold;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+nav.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span .hamburger{
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+
+/* Hero section styling */
+
+.hero {
+  height: 400px;
+  font-family: 'Booter-ZeroZero', cursive;
+  text-align: center;
+  background-image: url("/images-folder/temilade.png");
+  background-repeat: repeat;
+  background-size: contain;
+
+}
+.hero h1 {
+  color: #edd382;
+  font-size: 65px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.hero p {
+  color: #edd382;
+  font-size: 45px;
+  padding-top: 20px;
+}
+/* Subscribe section styling */
+
+.subscribe {
+  font-family: 'Booter-ZeroZero', cursive;
+font-size: 30px;
+  background-color: #140f2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+.subscribe h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.subscribe-input {
+  
+  padding: 8px;
+  width: 200px;
+  outline: none;
+}
+.subscribe-btn {
+  padding: 8px;
+  width: 200px;
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+/* skill set styling */
+
+.braids{
+  font-family: 'Booter-ZeroZero', cursive;
+width: 100vw;
+  background-color: #020122;
+  padding: 60px;
+  margin: 0 auto;
+  border: 2px solid #edd382;
+}
+
+.skill-set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 80px;
+}
+.skill-set img {
+  width: 100px;
+  height: auto;
+}
+.markup-skills {
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.markup-skills h3,
+.markup-skills p {
+  margin-top: 20px;
+  color: white;
+  
+}
+.markup-skills img{
+
+  border: 3px inset #edd382;
+
+  border-radius: 10%;
+}
+
+/* zoom effect starts */
+
+.markup-skills img:hover{
+  visibility: visible;
+  background: transparent;
+  top: 250px;
+  left:500px;
+  -webkit-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+  -o-transform:scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity:2;
+  border:1px solid orange;
+  border-radius: 10%;
+}
+
+/* zoom effect ends */
+
+/* Footer styling */
+
+footer {
+  
+  font-size: 15px;
+  color: #999;
+  background-color: #140f2d;
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+/* about page styling */
+.header a{
+  text-decoration: none;
+}
+
+.about-section {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  font-family: 'Booter-ZeroZero', cursive;
+
+}
+
+.about-us {
+  font-size: 28px;
+  width: 60%;
+}
+.about-us h3 {
+  margin-bottom: 16px;
+  font-size: 60px;
+}
+.aside {
+  font-size: 28px;
+  width: 30%;
+  height: 250px;
+  color: white;
+  background-color: #140f2d;
+  padding: 40px 20px;
+}
+.aside h3 {
+  margin-bottom: 16px;
+}
+.paragraph2 {
+  color: white;
+  background-color: #140f2d;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* service page styling */
+
+.services-section {
+  font-family: 'Booter-ZeroZero', cursive;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.services {
+  width: 60%;
+}
+.services .service-item {
+  background-color: #e6e6e6;
+  margin-bottom: 5px;
+  padding: 50px;
+}
+.services h2 {
+  margin-bottom: 20px;
+}
+.service-item h3 {
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+.service-item p {
+  font-size: 28px;
+}
+.service-item .price {
+  margin-top: 20px;
+}
+.services-aside {
+  font-size: 28px;
+  width: 30%;
+  height: 300px;
+  color: white;
+  background-color: #140f2d;
+  padding: 10px;
+}
+.services-aside h3 {
+  margin-bottom: 20px;
+}
+.services-aside input[type="text"] {
+  width: 90%;
+  padding: 8px;
+}
+.services-aside input[type="email"] {
+  width: 90%;
+  padding: 8px;
+}
+
+.quote-input {
+  margin-bottom: 10px;
+}
+.send-button {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+}
+
+/* Mobile responsive styling */
+
+/* @media (max-width:320px) { */
+
+    @media (min-width: 320px) and (max-width: 480px) {
+
+    .header ul{
+        display: none;
+        
+    }
+    .header .logo{
+        font-size: 25px;
+    }
+    span .hamburger{
+        display: block;
+    }
+.hero h1 {
+    font-size: 45px;
+    padding-top: 80px;
+  }
+  .hero p{
+      font-size: 28px;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscribe h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .subscribe form{
+      width: 100%;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 8px;
+    
+  }
+
+  .subscribe-btn {
+    display: block;
+    width: 100%;
+    
+  }
+
+  /* .skill-set {
+    flex-direction: column;
+    margin: 30px 80px;
+  } */
+
+  .markup-skills {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .markup-skills h3,
+.markup-skills p {
+  margin-top: 10px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .about-us {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .aside {
+    height: auto;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    padding:0;
+    
+
+  }
+  .aside h3{
+      padding: 10px 20px;
+      margin-bottom: 0;
+
+  }
+  .aside p{
+      padding: 0 20px 20px 20px;
+  }
+
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15px ;
+  }
+  .services{
+      width: 100%;
+  }
+  .service-item p{
+      font-size: 16px;
+  }
+
+  .services .service-item {
+    padding: 30px;
+  }
+
+  .services-aside {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px ;
+    height: auto;
+  }
+  .services-aside form{
+      padding: 30px;
+  }
+    
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    .header ul{
+        display: none;
+        
+    }
+    .header .logo{
+        font-size: 28px;
+    }
+    span .hamburger{
+        display: block;
+    }
+.hero h1 {
+    font-size: 45px;
+    padding-top: 80px;
+  }
+  .hero p{
+      font-size: 25px;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscribe h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+  .subscribe form{
+      width: 100%;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 8px;
+    
+  }
+
+  .subscribe-btn {
+    display: block;
+    width: 100%;
+    
+  }
+
+  /* .skill-set {
+    flex-direction: column;
+    margin: 30px 80px;
+  } */
+
+  .markup-skills {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .markup-skills h3,
+.markup-skills p {
+  margin-top: 10px;
+}
+
+
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .about-us {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .aside {
+    height: auto;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    padding:0;
+    
+
+  }
+  .aside h3{
+      padding: 10px 20px;
+      margin-bottom: 0;
+
+  }
+  .aside p{
+      padding: 0 20px 20px 20px;
+  }
+
+  
+
+  .services-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15px ;
+  }
+  .services{
+      width: 100%;
+  }
+
+  .services .service-item {
+    padding: 30px;
+    font-size: 35px;
+  }
+  .service-item p{
+      font-size: 26px;
+  }
+
+ 
+
+  .services-aside {
+    font-size: 26px;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px ;
+    height: auto;
+    outline: none;
+  }
+
+  
+  .services-aside form{
+      padding: 30px;
+  }
+    
+
+    
+}
+
+
