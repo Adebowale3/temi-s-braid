@@ -41,22 +41,7 @@ header .image-logo{
   cursor: pointer;
 }
 
-header .image-logo:hover{
 
-  visibility: visible;
-  background: transparent;
-  top: 250px;
-  left:500px;
-  -webkit-transform:scale(2);
-  -moz-transform:scale(2);
-  -o-transform:scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
-  /* opacity:3; */
-  border:1px solid orange;
-  border-radius: 50%;
-
-}
 .logo {
   color: white;
   font-size: 50px;
@@ -104,7 +89,7 @@ span .hamburger{
   height: 400px;
   font-family: 'Booter-ZeroZero', cursive;
   text-align: center;
-  background-image: url("/images-folder/temilade.png");
+  background-image: url("images-folder/temilade.png");
   background-repeat: repeat;
   background-size: contain;
 
