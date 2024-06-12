@@ -90,7 +90,7 @@ span .hamburger{
   font-family: 'Booter-ZeroZero', Hesthiya;
   text-align: center;
   background-image: url("images-folder/temilade.png");
-  background-repeat: norepeat;
+  background-repeat: no-repeat;
   background-size: contain;
 
 }
