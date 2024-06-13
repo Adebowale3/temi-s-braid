@@ -33,10 +33,10 @@ header {
 }
 header .image-logo{
 
-  width: 50px;
+  width: 80px;
   height: auto;
   border: 1px inset ;
-  border-radius: 70%;
+  border-radius: 50%;
   margin-right: 15px;
   cursor: pointer;
 }
