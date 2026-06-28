@@ -42,66 +42,65 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image-logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
     }
 
     .logo-container .logo {
         color: var(--primary) !important;
+        text-decoration: none;
+        font-size: 1.5rem;
     }
 
     .logo-container .it {
         color: var(--secondary);
     }
 
-    .hero {
-        text-align: center;
-        padding: 60px 20px;
-        background: #ffffff;
-        margin-bottom: 30px;
-        border-radius: 0 0 20px 20px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
     }
 
-    .hero h1 {
+    nav ul li a {
+        text-decoration: none;
+        color: var(--dark);
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
         color: var(--primary);
-        font-size: 2.8rem;
-        margin-bottom: 15px;
     }
 
-    .subscribe {
-        background: var(--dark);
-        color: #ffffff;
-        padding: 40px 20px;
-        text-align: center;
-        border-radius: 12px;
-        margin: 0 auto 40px auto;
-        max-width: 1140px;
-    }
-
-    .subscribe h2 {
-        color: #ffffff;
-        margin-bottom: 15px;
-    }
-
-    .subscribe-input {
-        padding: 12px 20px;
-        border: none;
-        border-radius: 6px 0 0 6px;
-        width: 280px;
-        max-width: 100%;
-    }
-
-    .subscribe-btn {
-        background: var(--primary);
-        color: #ffffff;
-        border: none;
-        padding: 12px 25px;
-        border-radius: 0 6px 6px 0;
+    .hamburger {
+        display: none;
+        font-size: 1.5rem;
         cursor: pointer;
-        transition: background 0.3s;
     }
 
-    .subscribe-btn:hover {
-        background: #5b4bc4;
+    @media (max-width: 768px) {
+        nav ul {
+            display: none !important;
+        }
+        .hamburger {
+            display: block;
+        }
     }
 
     /* Style Portfolio Adjustments */
@@ -121,7 +120,8 @@
     .markup-skills img {
         border-radius: 8px;
         max-width: 100%;
-        height: auto;
+        height: 250px;
+        object-fit: cover;
         margin-bottom: 15px;
     }
 
@@ -266,7 +266,7 @@
           <img class="image-logo" src="images-folder/newlogo2.jpeg" alt="">
         </div>
         <div>
-          <a href="index.html"> <span class="logo">TOUCH <span class="it">BY</span> <span class="it">TEE</span></span></a>
+          <a href="index.html" style="text-decoration: none;"> <span class="logo">TOUCH <span class="it">BY</span> <span class="it">TEE</span></span></a>
         </div>
       </div>
       <div>
@@ -277,11 +277,12 @@
         </ul>
         <span><i class="fa-solid fa-bars hamburger"></i></span>
       </div>
-
     </nav>
   </header>
+
   <main>
-    <section class="braids">
+    <!-- Portfolio Image Grid Section -->
+    <section class="braids mt-5">
       <div class="container text-center">
         <div class="row skill-set">
           <div class="col-md-3 col-sm-4 markup-skills">
@@ -291,34 +292,40 @@
           <div class="col-md-3 col-sm-4 markup-skills">
             <img src="images-folder/image2.jpg" alt="" />
             <h3>STITCH BRAIDS 2</h3>
+          </div>
           <div class="col-md-3 col-sm-4 markup-skills">
             <img src="images-folder/image3.jpg" alt="" />
             <h3>FEED-IN BRAIDS</h3>
-           <div class="col-md-3 col-sm-4 markup-skills">
+          </div>
+          <div class="col-md-3 col-sm-4 markup-skills">
             <img src="images-folder/image4.jpg" alt="" />
             <h3>FEED-IN BRAIDS 2</h3>
-           
+          </div>
           <div class="col-md-3 col-sm-4 markup-skills">
             <img src="images-folder/image5.jpg" alt="" />
             <h3>Graphic design</h3>
-            
+          </div>
           <div class="col-md-3 col-sm-4 markup-skills">
             <img src="images-folder/image6.jpg" alt="" />
             <h3>Graphic design</h3>
-            
+          </div>
           <div class="col-md-3 col-sm-4 markup-skills">
             <img src="images-folder/image7.jpg" alt="" />
             <h3>TWIST</h3>
+          </div>
           <div class="col-md-3 col-sm-4 markup-skills">
             <img src="images-folder/image8.jpg" alt="" />
             <h3>TWIST</h3>
+          </div>
           <div class="col-md-3 col-sm-4 markup-skills">
             <img src="images-folder/image9.png" alt="" />
             <h3>FEED-IN BRAIDS 2</h3>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Appointment Booking Form Panel -->
     <section id="booking-section" class="container">
         <div class="booking-wrapper">
             <h2 class="booking-title">Book Your Appointment</h2>
@@ -387,5 +394,106 @@
                     </div>
                 </form>
 
+                <!-- Review Sidebar -->
                 <div class="summary-box">
-                    <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 20px;">
+                    <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 20px;">Review Summary</h3>
+                    <div class="summary-row">
+                        <span>Selected Service:</span>
+                        <span id="summary-service-cost">£0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Hair Extensions:</span>
+                        <span id="summary-hair-cost">£0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total Balance:</span>
+                        <span id="summary-total">£0.00</span>
+                    </div>
+                    <div class="summary-row deposit mt-3">
+                        <span>Deposit Due (20%):</span>
+                        <span id="deposit-due">£0.00</span>
+                    </div>
+                    <div class="summary-row text-muted" style="font-size: 0.85rem; margin-top: 10px;">
+                        <span>Remaining Balance at Salon:</span>
+                        <span id="balance-due">£0.00</span>
+                    </div>
+                    <button type="submit" form="booking-form" class="btn-submit mt-3">Pay Deposit & Confirm</button>
+                </div>
+            </div>
+
+            <!-- Confirmation Screen Panel -->
+            <div id="confirmation-screen" class="confirmation-box hidden">
+                <div class="success-icon">✓</div>
+                <h2>Appointment Confirmed!</h2>
+                <p>Thank you for booking with Touch By Tee. Your session has been locked in.</p>
+                <div class="mx-auto p-4 my-4 text-start bg-light border rounded" style="max-width: 450px;">
+                    <div class="summary-row"><strong>Booking Code:</strong> <span id="receipt-ref"></span></div>
+                    <div class="summary-row"><strong>Client Name:</strong> <span id="receipt-name"></span></div>
+                    <div class="summary-row"><strong>Style Chosen:</strong> <span id="receipt-style"></span></div>
+                    <div class="summary-row"><strong>Hair Addition:</strong> <span id="receipt-hair"></span></div>
+                    <div class="summary-row"><strong>Timeline Slot:</strong> <span id="receipt-datetime"></span></div>
+                    <div class="summary-row border-top pt-2 mt-2"><strong>Processed Deposit:</strong> <span id="receipt-deposit" style="color: var(--success); font-weight: bold;"></span></div>
+                    <div class="summary-row"><strong>Remaining Due Later:</strong> <span id="receipt-balance"></span></div>
+                </div>
+                <button class="btn-submit" style="max-width: 220px;" onclick="window.location.reload()">Book Another Appointment</button>
+            </div>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="text-center py-4 mb-0" style="background: #ffffff; border-top: 1px solid var(--border); margin-top: 50px;">
+      Copyright &copy; Temi'sWorld
+      <script>document.write(new Date().getFullYear())</script>
+    </p>
+  </footer>
+
+  <script>
+    // Prevent selection of historical dates
+    document.getElementById('app-date').min = new Date().toISOString().split('T')[0];
+
+    function calculateTotals() {
+        const serviceSelect = document.getElementById('service');
+        const selectedService = serviceSelect.options[serviceSelect.selectedIndex];
+        const servicePrice = parseFloat(selectedService.getAttribute('data-price')) || 0;
+
+        const hairSelect = document.getElementById('hair-addon');
+        const selectedHair = hairSelect.options[hairSelect.selectedIndex];
+        const hairPrice = parseFloat(selectedHair.getAttribute('data-price')) || 0;
+
+        const totalCost = servicePrice + hairPrice;
+        const depositDue = servicePrice * 0.20; 
+        const remainingBalance = totalCost - depositDue;
+
+        document.getElementById('summary-service-cost').innerText = `£${servicePrice.toFixed(2)}`;
+        document.getElementById('summary-hair-cost').innerText = `£${hairPrice.toFixed(2)}`;
+        document.getElementById('summary-total').innerText = `£${totalCost.toFixed(2)}`;
+        document.getElementById('deposit-due').innerText = `£${depositDue.toFixed(2)}`;
+        document.getElementById('balance-due').innerText = `£${remainingBalance.toFixed(2)}`;
+    }
+
+    function handleFormSubmit(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('client-name').value;
+        const style = document.getElementById('service').value;
+        const hair = document.getElementById('hair-addon').value;
+        const date = document.getElementById('app-date').value;
+        const time = document.getElementById('app-time').value;
+
+        document.getElementById('receipt-ref').innerText = 'TBT-' + Math.floor(100000 + Math.random() * 900000);
+        document.getElementById('receipt-name').innerText = name;
+        document.getElementById('receipt-style').innerText = style;
+        document.getElementById('receipt-hair').innerText = hair;
+        document.getElementById('receipt-datetime').innerText = `${date} at ${time}`;
+        document.getElementById('receipt-deposit').innerText = document.getElementById('deposit-due').innerText;
+        document.getElementById('receipt-balance').innerText = document.getElementById('balance-due').innerText;
+
+        document.getElementById('booking-interface').classList.add('hidden');
+        document.getElementById('confirmation-screen').classList.remove('hidden');
+        
+        document.getElementById('booking-section').scrollIntoView({behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>
