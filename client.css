@@ -208,12 +208,12 @@ footer {
   bottom: 0;
 }
 
-/* about page styling */
+/* Bookings page styling */
 .header a{
   text-decoration: none;
 }
 
-.about-section {
+.Bookings-section {
   /* width: 100%; */
   display: flex;
   justify-content: space-between;
